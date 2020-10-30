@@ -12,6 +12,8 @@ const SignIn=require('./Controllers/SignIn');
 const Profile=require('./Controllers/Profile');
 const Image=require('./Controllers/Image');
 
+
+/*
 //Now adding Backend with Databases
 const { Client } = require('pg');
 
@@ -21,19 +23,24 @@ const db = new Client({
     rejectUnauthorized: false
   }
 });
-
+*/
 //db.connect();
-/*
+
 
 const db=knex({
     client: 'pg',
     connection: {
-      connectionString : process.env.DATABASE_URL,  //Defining LocalHost where database should be stored
-      ssl : true
+      //connectionString : process.env.DATABASE_URL,  //Defining LocalHost where database should be stored
+      //ssl : true
+      host : '127.0.0.1',
+      user : 'your_database_user',
+      password : 'your_database_password',
+      database : 'myapp_test'
+  
     }
   });
 
-  */  
+   
   
 
 
