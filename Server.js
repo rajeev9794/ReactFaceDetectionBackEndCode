@@ -16,10 +16,8 @@ const Image=require('./Controllers/Image');
 const db=knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',  //Defining LocalHost where database should be stored
-      user : 'postgres',
-      password : 'Rajeev@123',
-      database : 'facedetectiondb'
+      host : process.env.DATABASE_URL,  //Defining LocalHost where database should be stored
+      ssl : true
     }
   });
 
