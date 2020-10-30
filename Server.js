@@ -16,7 +16,7 @@ const Image=require('./Controllers/Image');
 const db=knex({
     client: 'pg',
     connection: {
-      host : process.env.DATABASE_URL,  //Defining LocalHost where database should be stored
+      connectionString : process.env.DATABASE_URL,  //Defining LocalHost where database should be stored
       ssl : true
     }
   });
