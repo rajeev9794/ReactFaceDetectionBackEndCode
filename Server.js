@@ -13,7 +13,7 @@ const Profile=require('./Controllers/Profile');
 const Image=require('./Controllers/Image');
 
 //Now adding Backend with Databases
-/*const { Client } = require('pg');
+const { Client } = require('pg');
 
 const db = new Client({
   connectionString: process.env.DATABASE_URL,
@@ -22,8 +22,8 @@ const db = new Client({
   }
 });
 
-db.connect();
-*/
+//db.connect();
+/*
 
 const db=knex({
     client: 'pg',
@@ -33,7 +33,7 @@ const db=knex({
     }
   });
 
-    
+  */  
   
 
 
