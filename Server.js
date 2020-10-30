@@ -43,10 +43,7 @@ const db=knex({
 
 
 app.get('/',(req,res)=>{
-  db.select('*')
-  .from('users').
-  then(res.json(console.log))
-  .catch(err=>res.status(400).json('Error occurred'));
+ res.json('Welcome to heroku');
 })
 
 
